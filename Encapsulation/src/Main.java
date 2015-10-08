@@ -1,0 +1,17 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		{
+			Security CFO = new Security ("Lateefah Shyaam", 21, "4041234567", "123 Beautiful Blvd");
+			System.out.println("CFO's name is " + CFO.GetName());
+			System.out.println("CFO's age is " + CFO.GetAge());
+			System.out.println("CFO's phone number is " + CFO.GetPhoneNumber());
+			System.out.println("CFO's address is " + CFO.GetAddress());
+			CFO.GrowsOlder();
+			System.out.println("CFO's age is " + CFO.GetAge());
+			
+		}
+	}
+
+}
