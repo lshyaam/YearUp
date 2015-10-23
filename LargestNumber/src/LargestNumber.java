@@ -1,0 +1,46 @@
+
+public class LargestNumber {
+
+	public static void main(String[] args) {
+		
+		int[] numbersArray = new int[] {-1, 34, 57, 89, 69, 72, -83};
+		FindLargestNumberUsingWhileLoop(numbersArray);
+		LargestNumbersUsingForLoops(numbersArray);
+
+	}
+
+	public static void FindLargestNumberUsingWhileLoop(int[] numbers) {
+		if (numbers != null) {
+			int i = 1;
+			int largestNumber = numbers[0];
+
+			while (i < numbers.length) {
+				if (largestNumber < numbers[i]) {
+					largestNumber = numbers[i];
+				}
+
+				i++;
+			}
+			System.out.println("Largest number using while  loop " + largestNumber);
+		}
+	}
+
+	public static void LargestNumbersUsingForLoops(int[] numbers) {
+		if (numbers != null) {
+			if (numbers.length > 0) {
+				int largestnumber = numbers[0];
+				for (int i = 1; i < numbers.length; i++)
+				{
+					if (largestnumber < numbers[i]) 
+					{
+						largestnumber = numbers[i];
+					}
+					
+				}
+				
+				System.out.println("Largest number using for loop " + largestnumber);
+			}
+		}
+	}
+}
+
